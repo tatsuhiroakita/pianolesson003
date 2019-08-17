@@ -6,7 +6,21 @@ class UsersController < ApplicationController
     @user.lesson_kaisu = 0
     @user.join_date = Date.today
     @user.lesson_nobekaisu = 0
-    @user.firstname = 'TEST-USER'
+    @user.firstname = '太郎'
+    @user.lastname = '漢字'
+    @user.kanji_name = '漢字　太郎'
+    @user.name_kana = 'カンジ　タロウ'
+    @user.email = 'vmak8160@gmail.com'
+    @user.email2 = 'ha_arcadia66@yahoo.co.jp'
+    @user.age = '15'
+    @user.address = '名古屋市中区栄三丁目１１番地'
+    @user.zip_code = '460-0008'
+    @user.mobile_phone = '090-1234-5689'
+    @user.emagency_phone = '080-1234-7890'
+    @user.emagency_name = '漢字　総一郎'
+    @user.emagency_kana = 'カンジ　ソウイチロウ'
+    @user.emagency_zokugara = '祖父'
+    
 
   end
 

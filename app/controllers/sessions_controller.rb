@@ -6,7 +6,9 @@ class SessionsController < ApplicationController
     user = User.find_by(username: params[:session][:username])
     if user && user.authenticate(params[:session][:password])
       log_in user
-      redirect_to root_path, success: 'ログインに成功しました'
+      ##redirect_to root_path, success: 'ログインに成功しました'
+      #redirect_to users_new_path, success: 'ログインに成功しました'
+      redirect_to usergamen_path, success: 'ログインに成功しました'
     else
       flash.now[:danger] = 'ログインに失敗しました'
       render :new

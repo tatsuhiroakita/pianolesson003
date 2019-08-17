@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'sessions/new'
-  get 'sessions/ne'
+  ##get 'sessions/ne'
   get 'users/new'
   get 'admin_users/new'
   get 'managements/index'
@@ -8,6 +8,12 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'pages#index'
   get 'pages/help'
+
+  get 'usergamen', to: 'users#usergamen'
+
+  ##get '/userlogin', to: 'pages/user'
+
+  ###user 'pages/user'
 
   #resources :managements
   resources :users
@@ -20,6 +26,8 @@ Rails.application.routes.draw do
   #end
   
   post  '/users/confirm', to: 'users#confirm'
+
+  ##post  '/users',     to: 'pages/users'
 
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
