@@ -1,0 +1,139 @@
+<%= asset_path('selectbox.json') %>
+
+<div class="u_users-new-wrapper">
+  <div class="container">
+  
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 u_users-new-container">
+        <h1 class="text-center u_text-white">Sign up</h1>
+        <%= form_for @user do |f| %>
+
+          <div class="form-group">
+            <%= f.label :"ユーザ名(username)", class: 'u_text-white' %>
+            <%= f.text_field :username, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"漢字氏名(kanji_name)", class: 'u_text-white' %>
+            <%= f.text_field :kanji_name, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :firstname, class: 'u_text-white' %>
+            <%= f.text_field :firstname, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :lastname, class: 'u_text-white' %>
+            <%= f.text_field :lastname, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :email, class: 'u_text-white' %>
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :email2, class: 'u_text-white' %>
+            <%= f.text_field :email2, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :age, class: 'u_text-white' %>
+            <%= f.text_field :age, class: 'form-control' %>
+          </div>
+          
+          <div class="form-group">
+            <%= f.label :"住所(address)", class: 'u_text-white' %>
+            <%= f.text_field :address, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :zip_code, class: 'u_text-white' %>
+            <%= f.text_field :zip_code, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :mobile_phone, class: 'u_text-white' %>
+            <%= f.text_field :mobile_phone, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :emagency_phone, class: 'u_text-white' %>
+            <%= f.text_field :emagency_phone, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :emagency_zokugara, class: 'u_text-white' %>
+            <%= f.text_field :emagency_zokugara, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :lesson_kaisu, class: 'u_text-white' %>
+            <%= f.text_field :lesson_kaisu, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :lesson_nobekaisu, class: 'u_text-white' %>
+            <%= f.text_field :lesson_nobekaisu, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :level_kibou, class: 'u_text-white' %>
+            <%= f.text_field :level_kibou, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :level_kakutei, class: 'u_text-white' %>
+            <%= f.text_field :level_kakutei, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :lesson_style, class: 'u_text-white' %>
+
+            <%= f.select :lesson_style, [["フリー", 1], ["月２回", 2],  ["年契約", 3] ],  :prompt => "選択してください" , class: 'form-control' %>
+          
+          </div>
+
+          <div class="form-group">
+            <%= f.label :fee_howto, class: 'u_text-white' %>
+            <%= f.text_field :fee_howto, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :pinano_owned, class: 'u_text-white' %>
+            <%= f.text_field :pinano_owned, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :pinano_history, class: 'u_text-white' %>
+            <%= f.text_field :pinano_history, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :join_date, class: 'u_text-white' %>
+            <%= f.text_field :join_date, class: 'form-control' %>
+          </div>
+    
+          <div class="form-group">
+            <%= f.label :password, class: 'u_text-white' %>
+            <%= f.password_field :password, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password_confirmation, class: 'u_text-white' %>
+            <%= f.password_field :password_confirmation, class: 'form-control' %>
+          </div>
+
+ 
+
+          <%= f.submit "登録", class: 'btn-block u_btn-white' %>
+        <% end %>
+        <%= link_to 'ログインはこちら', login_path,class: 'u_text-white' %>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

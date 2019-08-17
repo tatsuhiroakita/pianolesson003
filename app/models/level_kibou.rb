@@ -1,0 +1,2 @@
+class LevelKibou < ApplicationRecord
+end

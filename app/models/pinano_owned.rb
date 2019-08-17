@@ -1,0 +1,2 @@
+class PinanoOwned < ApplicationRecord
+end

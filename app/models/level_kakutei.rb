@@ -1,0 +1,2 @@
+class LevelKakutei < ApplicationRecord
+end

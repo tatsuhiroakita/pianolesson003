@@ -1,0 +1,152 @@
+<%= asset_path('selectbox.json') %>
+
+<div class="u_users-new-wrapper">
+  <div class="container">
+  
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 u_users-new-container">
+        <h1 class="text-center u_text-white">Sign up new</h1>
+        <%= form_for :user, url: users_confirm_path do |f| %>
+
+          <div class="form-group">
+            <%= f.label :"ユーザ名(username)", class: 'u_text-white' %>
+            <%= f.text_field :username, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"漢字氏名(kanji_name)", class: 'u_text-white' %>
+            <%= f.text_field :kanji_name, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"氏名かな(name_kana)", class: 'u_text-white' %>
+            <%= f.text_field :name_kana, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"名前(firstname)", class: 'u_text-white' %>
+            <%= f.text_field :firstname, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"名字(lastname)", class: 'u_text-white' %>
+            <%= f.text_field :lastname, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"メールアドレス(email)", class: 'u_text-white' %>
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"メールアドレス同報(email2)", class: 'u_text-white' %>
+            <%= f.text_field :email2, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"年齢(age)", class: 'u_text-white' %>
+            <%= f.text_field :age, class: 'form-control' %>
+          </div>
+          
+          <div class="form-group">
+            <%= f.label :"住所(address)", class: 'u_text-white' %>
+            <%= f.text_field :address, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"郵便番号(zip_code)", class: 'u_text-white' %>
+            <%= f.text_field :zip_code, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"携帯電話(mobile_phone)", class: 'u_text-white' %>
+            <%= f.text_field :mobile_phone, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"緊急連絡先(emagency_phone)", class: 'u_text-white' %>
+            <%= f.text_field :emagency_phone, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"緊急連絡先氏名(emagency_name)", class: 'u_text-white' %>
+            <%= f.text_field :emagency_name, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"緊急連絡先氏名 カナ(emagency_kana)", class: 'u_text-white' %>
+            <%= f.text_field :emagency_kana, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"緊急連絡先続柄(emagency_zokugara)", class: 'u_text-white' %>
+            <%= f.text_field :emagency_zokugara, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"レッスン回数(lesson_kaisu)", class: 'u_text-white' %>
+            <%= f.text_field :lesson_kaisu, value: @user.lesson_kaisu, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"レッスン述べ回数(lesson_nobekaisu)", class: 'u_text-white' %>
+            <%= f.text_field :lesson_nobekaisu, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"レベル希望(level_kibou)", class: 'u_text-white' %>
+            <%= f.collection_select( :level_kibous_id, LevelKibou.all, :id, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+            </div>
+
+          <div class="form-group">
+            <%= f.label :"レベル確定(level_kakutei)", class: 'u_text-white' %>
+            <%= f.collection_select( :level_kakuteis_id, LevelKakutei.all, :id, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"レッスンスタイル(lesson_styles_id)", class: 'u_text-white' %>
+            <%= f.collection_select( :lesson_styles_id, LessonStyle.all, :id, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"支払い方法(fee_howto)", class: 'u_text-white' %>
+            <%= f.collection_select( :fee_howtos_id, FeeHowto.all, :id, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"ピアノ有無(pinano_owned)", class: 'u_text-white' %>
+            <%= f.collection_select( :pinano_owned_id, PinanoOwned.all, :id, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+
+          <div class="form-group">
+            <%= f.label :"ピアノ歴(pinano_history)", class: 'u_text-white' %>
+            <%= f.collection_select( :pinano_histories_id, PinanoHistory.all, :id, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"入会日(join_date)", class: 'u_text-white' %>
+            <%= f.text_field :join_date, class: 'form-control' %>
+          </div>
+    
+          <div class="form-group">
+            <%= f.label :"パスワード(password)", class: 'u_text-white' %>
+            <%= f.password_field :password, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :"パスワード再確認(password_confirmation)", class: 'u_text-white' %>
+            <%= f.password_field :password_confirmation, class: 'form-control' %>
+          </div>
+
+ 
+          <%= f.submit "確認画面へ", class: 'btn-block u_btn-white' %>
+
+          
+        <% end %>
+        <%= link_to 'ログインはこちら', login_path,class: 'u_text-white' %>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

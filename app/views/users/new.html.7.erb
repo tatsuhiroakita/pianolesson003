@@ -1,0 +1,43 @@
+<div class="u_users-new-wrapper">
+  <div class="container">
+  
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 u_users-new-container">
+        <h1 class="text-center u_text-white">Sign up for Admin</h1>
+        <%= form_for @user do |f| %>
+
+          <div class="form-group">
+            <%= f.label :username, class: 'u_text-white' %>
+            <%= f.text_field :username, class: 'form-control' %>
+          </div>
+
+
+
+
+
+          <div class="form-group">
+            <%= f.label :email, class: 'u_text-white' %>
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
+
+     
+          <div class="form-group">
+            <%= f.label :password, class: 'u_text-white' %>
+            <%= f.password_field :password, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password_confirmation, class: 'u_text-white' %>
+            <%= f.password_field :password_confirmation, class: 'form-control' %>
+          </div>
+
+          <%= f.submit "登録", class: 'btn-block u_btn-white' %>
+        <% end %>
+        <%= link_to 'ログインはこちら', login_path,class: 'u_text-white' %>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>

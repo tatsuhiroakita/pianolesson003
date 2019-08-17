@@ -1,0 +1,2 @@
+class FeeHowto < ApplicationRecord
+end

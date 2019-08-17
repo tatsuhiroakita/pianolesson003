@@ -1,0 +1,2 @@
+class PinanoHistory < ApplicationRecord
+end

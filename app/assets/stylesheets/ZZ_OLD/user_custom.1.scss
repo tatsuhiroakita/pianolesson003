@@ -1,0 +1,33 @@
+
+.u_text-white {
+  color: rgb(209, 180, 243);
+}
+
+
+
+.u_users-new-wrapper {
+  width: 100%;
+  
+  background-image: image-url('homeMarkets.jpg');
+  /*background-position: center center;*/
+  /*background-repeat: no-repeat;*/
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /*background-size: contain;*/
+  background-color: #464646;
+
+  .u_users-new-container {
+    padding-top: 220px;
+
+    .form-group {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+
+.u_form-control {
+  height: 60px;
+
+}
