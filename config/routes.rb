@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :events
   get 'sessions/new'
   ##get 'sessions/ne'
   get 'users/new'
@@ -17,6 +18,8 @@ Rails.application.routes.draw do
 
   #resources :managements
   resources :users
+
+  resources :events
 
   #resources :users, only: %i(new create) do
   #  collection do

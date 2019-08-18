@@ -37,15 +37,16 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'bootstrap-sass'
-gem 'cancancan'
-gem 'devise'
+##gem 'cancancan'
+##gem 'devise'
 gem 'rolify'
+
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
 
 gem "jquery-rails"
 gem "bcrypt"
 
-gem 'fullcalendar-rails'
-gem 'momentjs-rails'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
