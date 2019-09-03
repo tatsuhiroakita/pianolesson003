@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_17_124611) do
+ActiveRecord::Schema.define(version: 2019_08_31_112138) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,17 @@ ActiveRecord::Schema.define(version: 2019_08_17_124611) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "meetings", force: :cascade do |t|
+    t.string "name"
+    t.text "description"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.bigint "users_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["users_id"], name: "index_meetings_on_users_id"
   end
 
   create_table "pinano_histories", force: :cascade do |t|
@@ -96,6 +107,7 @@ ActiveRecord::Schema.define(version: 2019_08_17_124611) do
     t.index ["pinano_owned_id"], name: "index_users_on_pinano_owned_id"
   end
 
+  add_foreign_key "meetings", "users", column: "users_id"
   add_foreign_key "users", "fee_howtos", column: "fee_howtos_id"
   add_foreign_key "users", "lesson_styles", column: "lesson_styles_id"
   add_foreign_key "users", "level_kakuteis", column: "level_kakuteis_id"

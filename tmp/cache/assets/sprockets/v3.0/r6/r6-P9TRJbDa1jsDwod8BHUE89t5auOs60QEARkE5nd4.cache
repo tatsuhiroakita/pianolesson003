@@ -1,0 +1,11 @@
+I"Ö(function() {
+  $(document).on('turbolinks:load', function() {
+    $('#calendar').fullCalendar({});
+  });
+
+  $(document).on('turbolinks:before-cache', function() {
+    $('#calendar').empty();
+  });
+
+}).call(this);
+:ET

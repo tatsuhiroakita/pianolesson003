@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :meetings
   resources :events
   get 'sessions/new'
   ##get 'sessions/ne'

@@ -19,8 +19,19 @@
       </div>
 
     </div>
-
-    <div id="calendar"></div>
+    <div class="row">
+      <%= month_calendar events: @meetings do |date, meetings| %>
+       <%# d = Date.parse(date) %>
+       <%= date.strftime("%d") %>
+    
+       <% meetings.each do |meeting| %>
+         <div>
+           <%= link_to meeting.name, meeting %>
+           <%#= meeting.name %>
+         </div>
+       <% end %>
+     <% end %>
+    </div>
   </div>
 
  
@@ -28,6 +39,10 @@
   
 
 </div>
+
+
+
+
 
 
 
