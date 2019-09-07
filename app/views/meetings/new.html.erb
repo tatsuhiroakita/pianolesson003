@@ -1,5 +1,16 @@
-<h1>New Meeting</h1>
 
-<%= render 'form', meeting: @meeting %>
+<div class="u_users-new-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-3 col-md-7 u_users-new-container">
+                <h1>予約画面</h1>
+                <div class="form-group">
+                    <%= render 'form', meeting: @meeting ,class: 'form-control' %>
+                </div>
+                <%= link_to 'Back', meetings_path %>
+                <%= link_to 'Back_UserGamen', usergamen_path %>
+            </div>
+        </div>
 
-<%= link_to 'Back', meetings_path %>
+    </div>
+</div>

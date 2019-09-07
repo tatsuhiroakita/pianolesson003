@@ -11,15 +11,19 @@
       </div>
 
       <div class="col-md-offset-1 col-md-3">
-        <%= link_to '予約登録', login_path,class: 'btn btn-block btn-white' %>
+        <%#= link_to '予約登録', login_path,class: 'btn btn-block btn-white' %>
+        <%= link_to '予約登録', meetings_path,class: 'btn btn-block btn-white' %>
       </div>
 
       <div class="col-md-offset-1 col-md-3">
-        <%= link_to '登録情報確認', login_path,class: 'btn btn-block btn-white' %>
+        <%= link_to '登録情報確認', usershow_path,class: 'btn btn-block btn-white' %>
       </div>
 
     </div>
+    
     <div class="row">
+
+
       <%= month_calendar events: @meetings do |date, meetings| %>
        <%# d = Date.parse(date) %>
        <%= date.strftime("%d") %>
@@ -32,6 +36,8 @@
        <% end %>
      <% end %>
     </div>
+
+
   </div>
 
  

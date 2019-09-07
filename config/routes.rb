@@ -13,6 +13,8 @@ Rails.application.routes.draw do
 
   get 'usergamen', to: 'users#usergamen'
 
+  get 'usershow', to: 'users#usershow'
+
   ##get '/userlogin', to: 'pages/user'
 
   ###user 'pages/user'

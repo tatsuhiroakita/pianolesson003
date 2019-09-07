@@ -53,6 +53,9 @@ class UsersController < ApplicationController
     @meetings = Meeting.where(users_id: current_user.id)
   end
 
+  def usershow 
+    @user = User.where(users_id: current_user.id)
+  end
 
   private
   ##def user_params
