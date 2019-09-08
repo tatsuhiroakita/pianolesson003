@@ -18,7 +18,7 @@
       <tr>
         <td><%= meeting.name %></td>
         <td><%= meeting.description %></td>
-        <td><%= meeting.start_time %></td>
+        <td><%= meeting.start_time.strftime("%Y年%m月%d日") %></td>
         <td><%= meeting.end_time %></td>
         <td><%= link_to 'Show', meeting %></td>
         <td><%= link_to 'Edit', edit_meeting_path(meeting) %></td>

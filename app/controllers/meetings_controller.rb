@@ -15,6 +15,24 @@ class MeetingsController < ApplicationController
   # GET /meetings/new
   def new
     @meeting = Meeting.new
+    ###@yoyakudates=[1,8,22,29] 
+    require "date"
+
+    d = Date.today
+    while d.wday != 2 do
+      d += 1
+    end
+
+    @yoyaku = []
+    for i in 0..7 do
+      ##@yoyaku[i] = {'name' => d.strftime("%Y年 %m月 %d日"), "value" => d.strftime("%Y-%m-%d")}
+      ###@yoyaku[i] = {:name => d.strftime("%Y年 %m月 %d日"), :value => d.strftime("%Y-%m-%d")}
+      @yoyaku[i] = [d.strftime("%Y年 %m月 %d日"), d.strftime("%Y-%m-%d")]
+      ##@yoyaku[i] = d.strftime("%d")
+
+      d += 7
+
+    end
   end
 
   # GET /meetings/1/edit

@@ -23,7 +23,12 @@
 
   <div class="field">
     <%= form.label :start_time %>
-    <%= form.datetime_select :start_time %>
+    <%= form.select( :start_date, @yoyaku) %>
+    <%= form.time_select :start_time,
+                minute_step:30
+        
+        
+    %>
   </div>
 
   <div class="field">

@@ -23204,3 +23204,765 @@ LINE 1: SELECT "users".* FROM "users" WHERE "users"."users_id" = $1
     20:         <td><%= user.username %></td>
   
 app/views/users/usershow.html.erb:17:in `_app_views_users_usershow_html_erb__2493762986375587473_70157250732860'
+Started GET "/usershow" for 192.168.10.10 at 2019-09-07 20:13:38 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by UsersController#usershow as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usershow.html.erb within layouts/application
+  Rendered users/usershow.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 769ms (Views: 668.8ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/usershow" for 192.168.10.10 at 2019-09-07 20:13:54 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usershow as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usershow.html.erb within layouts/application
+  Rendered users/usershow.html.erb within layouts/application (3.4ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.9ms)
+
+
+  
+SyntaxError (/home/lmf/ZZ_WORK/rb241/pianolesson/app/views/users/usershow.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/users/usershow.html.erb:35: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/usershow" for 192.168.10.10 at 2019-09-07 20:14:13 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usershow as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usershow.html.erb within layouts/application
+  Rendered users/usershow.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    15: 
+    16:   <tbody>
+    17:     <%# if @users.present? %>
+    18:     <% @users.each do |user| %>
+    19:       <tr>
+    20:         <td><%= users.username %></td>
+    21:      
+  
+app/views/users/usershow.html.erb:18:in `_app_views_users_usershow_html_erb__1600734297127501223_70351128180640'
+Started GET "/usershow" for 192.168.10.10 at 2019-09-07 20:14:14 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usershow as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usershow.html.erb within layouts/application
+  Rendered users/usershow.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    15: 
+    16:   <tbody>
+    17:     <%# if @users.present? %>
+    18:     <% @users.each do |user| %>
+    19:       <tr>
+    20:         <td><%= users.username %></td>
+    21:      
+  
+app/views/users/usershow.html.erb:18:in `_app_views_users_usershow_html_erb__1600734297127501223_70351046366380'
+Started GET "/usershow" for 192.168.10.10 at 2019-09-07 20:14:15 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usershow as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usershow.html.erb within layouts/application
+  Rendered users/usershow.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    15: 
+    16:   <tbody>
+    17:     <%# if @users.present? %>
+    18:     <% @users.each do |user| %>
+    19:       <tr>
+    20:         <td><%= users.username %></td>
+    21:      
+  
+app/views/users/usershow.html.erb:18:in `_app_views_users_usershow_html_erb__1600734297127501223_70350963887440'
+Started GET "/usershow" for 192.168.10.10 at 2019-09-07 20:15:00 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usershow as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usershow.html.erb within layouts/application
+  Rendered users/usershow.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    15: 
+    16:   <tbody>
+    17:     <%# if @users.present? %>
+    18:     <% @users.each do |user| %>
+    19:       <tr>
+    20:         <td><%= user.username %></td>
+    21:      
+  
+app/views/users/usershow.html.erb:18:in `_app_views_users_usershow_html_erb__1600734297127501223_70351045362500'
+Started GET "/usershow" for 192.168.10.10 at 2019-09-07 20:15:01 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usershow as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usershow.html.erb within layouts/application
+  Rendered users/usershow.html.erb within layouts/application (3.9ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    15: 
+    16:   <tbody>
+    17:     <%# if @users.present? %>
+    18:     <% @users.each do |user| %>
+    19:       <tr>
+    20:         <td><%= user.username %></td>
+    21:      
+  
+app/views/users/usershow.html.erb:18:in `_app_views_users_usershow_html_erb__1600734297127501223_70350963536920'
+Started GET "/" for 192.168.10.10 at 2019-09-07 20:27:16 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 158ms (Views: 153.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/usergamen" for 192.168.10.10 at 2019-09-07 20:27:26 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usergamen as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usergamen.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."users_id" = $1[0m  [["users_id", 11]]
+  ↳ app/views/users/usergamen.html.erb:27
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/simple_calendar-2.3.0/app/views/simple_calendar/_month_calendar.html.erb (107.6ms)
+  Rendered users/usergamen.html.erb within layouts/application (138.0ms)
+Completed 200 OK in 310ms (Views: 289.3ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/meetings" for 192.168.10.10 at 2019-09-07 20:27:34 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:17
+  Rendered meetings/index.html.erb within layouts/application (6.8ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 147ms (Views: 143.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/meetings" for 192.168.10.10 at 2019-09-07 20:27:48 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:17
+  Rendered meetings/index.html.erb within layouts/application (7.1ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 163ms (Views: 157.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/usergamen" for 192.168.10.10 at 2019-09-07 20:28:35 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usergamen as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usergamen.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."users_id" = $1[0m  [["users_id", 11]]
+  ↳ app/views/users/usergamen.html.erb:27
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/simple_calendar-2.3.0/app/views/simple_calendar/_month_calendar.html.erb (16.5ms)
+  Rendered users/usergamen.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 164ms (Views: 157.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/meetings" for 192.168.10.10 at 2019-09-07 20:28:50 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:17
+  Rendered meetings/index.html.erb within layouts/application (7.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 163ms (Views: 159.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/usergamen" for 192.168.10.10 at 2019-09-07 20:28:54 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usergamen as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usergamen.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."users_id" = $1[0m  [["users_id", 11]]
+  ↳ app/views/users/usergamen.html.erb:27
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/simple_calendar-2.3.0/app/views/simple_calendar/_month_calendar.html.erb (17.0ms)
+  Rendered users/usergamen.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 165ms (Views: 158.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/meetings" for 192.168.10.10 at 2019-09-07 20:30:54 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:17
+  Rendered meetings/index.html.erb within layouts/application (6.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 165ms (Views: 159.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 20:31:07 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (30.6ms)
+  Rendered meetings/new.html.erb within layouts/application (33.3ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 173ms (Views: 169.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/usergamen" for 192.168.10.10 at 2019-09-07 20:44:22 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usergamen as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usergamen.html.erb within layouts/application
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."users_id" = $1[0m  [["users_id", 11]]
+  ↳ app/views/users/usergamen.html.erb:27
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/simple_calendar-2.3.0/app/views/simple_calendar/_month_calendar.html.erb (19.4ms)
+  Rendered users/usergamen.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 316ms (Views: 224.1ms | ActiveRecord: 22.4ms)
+
+
+Started GET "/usershow" for 192.168.10.10 at 2019-09-07 20:44:24 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usershow as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usershow.html.erb within layouts/application
+  Rendered users/usershow.html.erb within layouts/application (7.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    15: 
+    16:   <tbody>
+    17:     <%# if @users.present? %>
+    18:     <% @users.each do |user| %>
+    19:       <tr>
+    20:         <td><%= user.username %></td>
+    21:      
+  
+app/views/users/usershow.html.erb:18:in `_app_views_users_usershow_html_erb__1600734297127501223_47028783346880'
+Started GET "/usergamen" for 192.168.10.10 at 2019-09-07 20:44:27 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usergamen as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usergamen.html.erb within layouts/application
+  [1m[36mMeeting Load (0.6ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."users_id" = $1[0m  [["users_id", 11]]
+  ↳ app/views/users/usergamen.html.erb:27
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/simple_calendar-2.3.0/app/views/simple_calendar/_month_calendar.html.erb (16.6ms)
+  Rendered users/usergamen.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 166ms (Views: 160.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/meetings" for 192.168.10.10 at 2019-09-07 20:44:28 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/home/lmf/ZZ_WORK/rb241/pianolesson/app/controllers/meetings_controller.rb:18: Invalid char `\x08' in expression):
+  
+app/controllers/meetings_controller.rb:18: Invalid char `\x08' in expression
+Started GET "/usergamen" for 192.168.10.10 at 2019-09-07 20:52:08 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usergamen as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usergamen.html.erb within layouts/application
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."users_id" = $1[0m  [["users_id", 11]]
+  ↳ app/views/users/usergamen.html.erb:27
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/simple_calendar-2.3.0/app/views/simple_calendar/_month_calendar.html.erb (19.2ms)
+  Rendered users/usergamen.html.erb within layouts/application (45.4ms)
+Completed 200 OK in 286ms (Views: 200.2ms | ActiveRecord: 23.0ms)
+
+
+Started GET "/meetings" for 192.168.10.10 at 2019-09-07 20:52:11 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:17
+  Rendered meetings/index.html.erb within layouts/application (6.9ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 150ms (Views: 145.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/usergamen" for 192.168.10.10 at 2019-09-07 20:52:13 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usergamen as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usergamen.html.erb within layouts/application
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."users_id" = $1[0m  [["users_id", 11]]
+  ↳ app/views/users/usergamen.html.erb:27
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/simple_calendar-2.3.0/app/views/simple_calendar/_month_calendar.html.erb (16.7ms)
+  Rendered users/usergamen.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 180ms (Views: 174.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/meetings" for 192.168.10.10 at 2019-09-07 20:52:14 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.7ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:17
+  Rendered meetings/index.html.erb within layouts/application (7.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 151ms (Views: 145.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 20:52:16 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (13.7ms)
+  Rendered meetings/new.html.erb within layouts/application (16.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 181ms (Views: 176.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 20:56:00 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (14.6ms)
+  Rendered meetings/new.html.erb within layouts/application (17.0ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 265ms (Views: 260.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 20:56:07 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (25.8ms)
+  Rendered meetings/new.html.erb within layouts/application (29.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 228ms (Views: 223.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 20:56:07 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (13.8ms)
+  Rendered meetings/new.html.erb within layouts/application (16.2ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 166ms (Views: 161.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 192.168.10.10 at 2019-09-07 20:56:44 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.7ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 720ms (Views: 700.5ms | ActiveRecord: 12.3ms)
+
+
+Started GET "/login" for 192.168.10.10 at 2019-09-07 20:56:46 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (122.1ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 260ms (Views: 256.9ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/login" for 192.168.10.10 at 2019-09-07 20:56:52 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z2AcTsrr7XC8Wv4Iv90jCYIOCmrCCViEYuI5UKiu1x0gkcgnk/qP8u4UfCLAhp+KIs1p0FN8fTVUlyrb24azCw==", "session"=>{"username"=>"test024", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test024"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://192.168.10.69:3000/usergamen
+Completed 302 Found in 85ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/usergamen" for 192.168.10.10 at 2019-09-07 20:56:52 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usergamen as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usergamen.html.erb within layouts/application
+  [1m[36mMeeting Load (1.1ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."users_id" = $1[0m  [["users_id", 11]]
+  ↳ app/views/users/usergamen.html.erb:27
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/simple_calendar-2.3.0/app/views/simple_calendar/_month_calendar.html.erb (17.6ms)
+  Rendered users/usergamen.html.erb within layouts/application (43.7ms)
+Completed 200 OK in 192ms (Views: 175.6ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/meetings" for 192.168.10.10 at 2019-09-07 20:56:55 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:17
+  Rendered meetings/index.html.erb within layouts/application (6.9ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 172ms (Views: 167.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 20:56:57 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (15.3ms)
+  Rendered meetings/new.html.erb within layouts/application (17.6ms)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 157ms (Views: 153.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 192.168.10.10 at 2019-09-07 21:32:57 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (1.3ms)
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 226ms (Views: 209.7ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/login" for 192.168.10.10 at 2019-09-07 21:33:00 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 147ms (Views: 144.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/login" for 192.168.10.10 at 2019-09-07 21:33:05 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HU3Sw7I38kCBm7HN0Sb6vNvnNan1YNnQJVMNPlpI79HyvAaq6yaQwtPVM+eufUY/eyRWE2QV/GETJh61KWCLxw==", "session"=>{"username"=>"test024", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test024"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6
+Redirected to http://192.168.10.69:3000/usergamen
+Completed 302 Found in 86ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/usergamen" for 192.168.10.10 at 2019-09-07 21:33:05 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by UsersController#usergamen as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+  Rendering users/usergamen.html.erb within layouts/application
+  [1m[36mMeeting Load (1.0ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings" WHERE "meetings"."users_id" = $1[0m  [["users_id", 11]]
+  ↳ app/views/users/usergamen.html.erb:27
+  Rendered /home/lmf/.rbenv/versions/2.4.1/lib/ruby/gems/2.4.0/gems/simple_calendar-2.3.0/app/views/simple_calendar/_month_calendar.html.erb (18.2ms)
+  Rendered users/usergamen.html.erb within layouts/application (44.6ms)
+Completed 200 OK in 195ms (Views: 178.1ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/meetings" for 192.168.10.10 at 2019-09-07 21:33:09 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#index as HTML
+  Rendering meetings/index.html.erb within layouts/application
+  [1m[36mMeeting Load (0.8ms)[0m  [1m[34mSELECT "meetings".* FROM "meetings"[0m
+  ↳ app/views/meetings/index.html.erb:17
+  Rendered meetings/index.html.erb within layouts/application (7.8ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 169ms (Views: 165.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:33:12 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (1.7ms)
+  Rendered meetings/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/lmf/ZZ_WORK/rb241/pianolesson/app/views/meetings/_form.html.erb:31: syntax error, unexpected ')'
+    );@output_buffer.safe_append='
+     ^
+/home/lmf/ZZ_WORK/rb241/pianolesson/app/views/meetings/_form.html.erb:42: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/lmf/ZZ_WORK/rb241/pianolesson/app/views/meetings/_form.html.erb:44: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/lmf/ZZ_WORK/rb241/pianolesson/app/views/meetings/_form.html.erb:46: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/meetings/_form.html.erb:31: syntax error, unexpected ')'
+app/views/meetings/_form.html.erb:42: syntax error, unexpected keyword_end, expecting ')'
+app/views/meetings/_form.html.erb:44: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/meetings/_form.html.erb:46: syntax error, unexpected keyword_end, expecting ')'
+app/views/meetings/new.html.erb:8:in `_app_views_meetings_new_html_erb___1543688200459465054_70021725012340'
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:34:03 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (348.9ms)
+  Rendered meetings/new.html.erb within layouts/application (351.0ms)
+Completed 500 Internal Server Error in 359ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `colection_select' for #<ActionView::Helpers::FormBuilder:0x007f5e62940120>
+Did you mean?  collection_select):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :start_time %>
+    26:     <%= form.colection_select @yoyaku %>
+    27:     <%= form.time_select :start_time,
+    28:                 minute_step:30
+    29:         
+  
+app/views/meetings/_form.html.erb:26:in `block in _app_views_meetings__form_html_erb___974608078425218200_70021678794340'
+app/views/meetings/_form.html.erb:1:in `_app_views_meetings__form_html_erb___974608078425218200_70021678794340'
+app/views/meetings/new.html.erb:8:in `_app_views_meetings_new_html_erb___1543688200459465054_70021678834380'
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:34:25 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (7.9ms)
+  Rendered meetings/new.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 4..6)):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :start_time %>
+    26:     <%= form.collection_select @yoyaku %>
+    27:     <%= form.time_select :start_time,
+    28:                 minute_step:30
+    29:         
+  
+app/views/meetings/_form.html.erb:26:in `block in _app_views_meetings__form_html_erb___974608078425218200_70021678847860'
+app/views/meetings/_form.html.erb:1:in `_app_views_meetings__form_html_erb___974608078425218200_70021678847860'
+app/views/meetings/new.html.erb:8:in `_app_views_meetings_new_html_erb___1543688200459465054_70021678832280'
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:39:28 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (696.7ms)
+  Rendered meetings/new.html.erb within layouts/application (698.7ms)
+Completed 500 Internal Server Error in 704ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `from' for #<#<Class:0x007f5e62863900>:0x007f5e64b0f530>
+Did you mean?  form):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :start_time %>
+    26:     <%= from.collection_select( :start_date, @yoyaku, :value, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+    27:     <%= form.time_select :start_time,
+    28:                 minute_step:30
+    29:         
+  
+app/views/meetings/_form.html.erb:26:in `block in _app_views_meetings__form_html_erb___974608078425218200_70021696350600'
+app/views/meetings/_form.html.erb:1:in `_app_views_meetings__form_html_erb___974608078425218200_70021696350600'
+app/views/meetings/new.html.erb:8:in `_app_views_meetings_new_html_erb___1543688200459465054_70021696487380'
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:41:13 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (692.3ms)
+  Rendered meetings/new.html.erb within layouts/application (694.2ms)
+Completed 500 Internal Server Error in 725ms (ActiveRecord: 7.6ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `from' for #<#<Class:0x007f5e6494cb30>:0x007f5e6496ac20>
+Did you mean?  form):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :start_time %>
+    26:     <%= from.collection_select( :start_date, @yoyaku, :value, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+    27:     <%= form.time_select :start_time,
+    28:                 minute_step:30
+    29:         
+  
+app/views/meetings/_form.html.erb:26:in `block in _app_views_meetings__form_html_erb___974608078425218200_70021695774620'
+app/views/meetings/_form.html.erb:1:in `_app_views_meetings__form_html_erb___974608078425218200_70021695774620'
+app/views/meetings/new.html.erb:8:in `_app_views_meetings_new_html_erb___1543688200459465054_70021695564400'
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:42:15 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (21.6ms)
+  Rendered meetings/new.html.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for {"name"=>"2019年 09月 10日", "value"=>"2019-09-10日"}:Hash):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :start_time %>
+    26:     <%= form.collection_select( :start_date, @yoyaku, :value, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+    27:     <%= form.time_select :start_time,
+    28:                 minute_step:30
+    29:         
+  
+app/views/meetings/_form.html.erb:26:in `block in _app_views_meetings__form_html_erb___974608078425218200_70021696284980'
+app/views/meetings/_form.html.erb:1:in `_app_views_meetings__form_html_erb___974608078425218200_70021696284980'
+app/views/meetings/new.html.erb:8:in `_app_views_meetings_new_html_erb___1543688200459465054_70021696486080'
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:43:29 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (14.9ms)
+  Rendered meetings/new.html.erb within layouts/application (17.5ms)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 7.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for {"name"=>"2019年 09月 10日", "value"=>"2019-09-10"}:Hash):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :start_time %>
+    26:     <%= form.collection_select( :start_date, @yoyaku, :value, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+    27:     <%= form.time_select :start_time,
+    28:                 minute_step:30
+    29:         
+  
+app/views/meetings/_form.html.erb:26:in `block in _app_views_meetings__form_html_erb___974608078425218200_70021694086220'
+app/views/meetings/_form.html.erb:1:in `_app_views_meetings__form_html_erb___974608078425218200_70021694086220'
+app/views/meetings/new.html.erb:8:in `_app_views_meetings_new_html_erb___1543688200459465054_70021693804780'
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:45:22 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (10.5ms)
+  Rendered meetings/new.html.erb within layouts/application (12.5ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 7.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `name' for {:name=>"2019年 09月 10日", :value=>"2019-09-10"}:Hash):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :start_time %>
+    26:     <%= form.collection_select( :start_date, @yoyaku, :value, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+    27:     <%= form.time_select :start_time,
+    28:                 minute_step:30
+    29:         
+  
+app/views/meetings/_form.html.erb:26:in `block in _app_views_meetings__form_html_erb___974608078425218200_70021679645140'
+app/views/meetings/_form.html.erb:1:in `_app_views_meetings__form_html_erb___974608078425218200_70021679645140'
+app/views/meetings/new.html.erb:8:in `_app_views_meetings_new_html_erb___1543688200459465054_70021679687640'
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:52:03 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (5.7ms)
+  Rendered meetings/new.html.erb within layouts/application (7.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 6, expected 1..4)):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :start_time %>
+    26:     <%= form.select( :start_date, @yoyaku, :value, :name, {prompt:  "選択してください"}, {class: "form-control input-sm"}) %>
+    27:     <%= form.time_select :start_time,
+    28:                 minute_step:30
+    29:         
+  
+app/views/meetings/_form.html.erb:26:in `block in _app_views_meetings__form_html_erb___974608078425218200_70021696920620'
+app/views/meetings/_form.html.erb:1:in `_app_views_meetings__form_html_erb___974608078425218200_70021696920620'
+app/views/meetings/new.html.erb:8:in `_app_views_meetings_new_html_erb___1543688200459465054_70021697040280'
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:52:31 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (7.5ms)
+  Rendered meetings/new.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for :value:Symbol):
+    23: 
+    24:   <div class="field">
+    25:     <%= form.label :start_time %>
+    26:     <%= form.select( :start_date, @yoyaku, :value, :name) %>
+    27:     <%= form.time_select :start_time,
+    28:                 minute_step:30
+    29:         
+  
+app/views/meetings/_form.html.erb:26:in `block in _app_views_meetings__form_html_erb___974608078425218200_70021674790660'
+app/views/meetings/_form.html.erb:1:in `_app_views_meetings__form_html_erb___974608078425218200_70021674790660'
+app/views/meetings/new.html.erb:8:in `_app_views_meetings_new_html_erb___1543688200459465054_70021674853660'
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:53:50 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (29.7ms)
+  Rendered meetings/new.html.erb within layouts/application (32.5ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 252ms (Views: 234.5ms | ActiveRecord: 14.6ms)
+
+
+Started GET "/meetings/new" for 192.168.10.10 at 2019-09-07 21:56:05 +0900
+Cannot render console from 192.168.10.10! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by MeetingsController#new as HTML
+  Rendering meetings/new.html.erb within layouts/application
+  Rendered meetings/_form.html.erb (13.1ms)
+  Rendered meetings/new.html.erb within layouts/application (15.3ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10
+Completed 200 OK in 258ms (Views: 219.9ms | ActiveRecord: 16.1ms)
+
+
